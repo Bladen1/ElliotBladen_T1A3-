@@ -1,33 +1,54 @@
-def greeting
-    puts "Welcome to RaceLabs"
+now = Time.now
+counter = 1
+loop do
+  if Time.now < now + counter
+    next
+  else
+    puts "......"
+  end
+  counter += 1
+  break if counter > 2
+  
+end
+now = Time.now
+counter = 1
+loop do
+  if Time.now < now + counter
+    next
+  else
+    puts "....."
+  end
+  counter += 1
+  break if counter > 2
+  
 end
 
-def goodbye
-    puts "Thanks for betting with RaceLabs"
+now = Time.now
+counter = 1
+loop do
+  if Time.now < now + counter
+    next
+  else
+    puts "..."
+  end
+  counter += 1
+  break if counter > 2
+
 end
 
-def thanks
-    puts "Thanks"
+now = Time.now
+counter = 1
+loop do
+  if Time.now < now + counter
+    next
+  else
+    puts "."
+  end
+  counter += 1
+  break if counter > 2
+
 end
 
-def id
-    puts "Please enter your 18"
-end
-
-def idfail
-    puts "Unfortunatley you under the legal age to gamble. Have a good day"
-end
-
-def horse
-    puts "Please enter the horses' number you wish to stake on"
-end
-
-def stake
-    puts "Please enter the stake you wish to place"
-
-def check
-    puts "Please take your reciept"
-end
-end
-
-idfail
+puts "WELCOME TO RACELABS"
+puts "please press 'enter'"
+gets.chomp

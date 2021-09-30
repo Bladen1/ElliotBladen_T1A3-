@@ -1,3 +1,5 @@
+require('colorize')
+
 def greeting
     puts "Welcome to RaceLabs"
 end
@@ -15,7 +17,7 @@ def id
 end
 
 def idfail
-    puts "Unfortunatley you under the legal age to gamble. Have a good day"
+    puts "Unfortunatley you under the legal age to gamble. Have a good day".red
 end
 
 def idpass
@@ -31,7 +33,8 @@ def race
     puts "Please press 'Enter' to seee Race 1"
 
 end
-winx = File.readlines('long_form.txt')[1]
+l = File.readlines('long_form.txt')
+
 
 odds = File.read('horse_odds.txt')
 form = File.read('horse_form.txt')
@@ -50,37 +53,43 @@ elsif age >= 19
     while true
         
        
-    puts odds
+    puts odds.green
     puts
-    puts "(B) to place Bet, (F) form (E) Exit" 
+    puts "(b)".blue + " " + "to place Bet " + "(f)".blue + " " + "form " + "(e)".red + " " + "exit" 
         input = gets.chomp
-            if input == 'b' then
-        puts form
-             puts "please select your horse" 
+        if input == 'e'
+            exit
+        elsif input == 'b' then
+        require_relative './betslip'
+             
             input = gets.chomp
-            elsif input == "f"
+            break
+          
+        elsif input == "f" then
                 puts form
-                puts "Please select your horse number for longer form"
+                puts "Please select 'l' for longer form 'enter' to return to main screen"
                 form = gets.chomp
-                while true
-                if form == "1" then
-                    puts winx
-                    puts "Please press 'esc' to go back"
-                    
-
+                if form == "l" then
+                    puts l
+                    puts 'Please Press "Enter" to get back to the main screen'
+                    input = gets.chomp
+                end
+               
+         end
             
-            end
-        end
-        break
+     end
+end
+    
+        
     
     
     
-    
-    end
+
 
         
-    end
-end
+    
+
+
 
 
     
@@ -91,26 +100,3 @@ end
 
 
 
- #puts form
-
-
-    #option = gets.chomp
-    #if option == "f"
-           # puts "Please select number"
-    #else puts "sorry"
-    #end
-            
-                
-                
-                
-                
-                
-                #longform == gets.chomp
-                #if long_form === horse1.number
-                 #   puts winx
-            #else 
-            #end
-      #  end
-
-         file = File.readlines('long_form.txt')[1]
-#p file

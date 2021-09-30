@@ -1,3 +1,5 @@
+require('colorize')
+
 now = Time.now
 counter = 1
 loop do
@@ -49,6 +51,6 @@ loop do
 
 end
 
-puts "WELCOME TO RACELABS"
+puts "WELCOME TO" + " " + "RACELABS".blue
 puts "please press 'enter'"
 gets.chomp

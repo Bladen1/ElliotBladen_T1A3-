@@ -36,7 +36,7 @@ Target Audience obvisoulsy is anyone interested in making a bet. Narrowing it do
 2) Second feature is the race form. Once the user has selected the race the user will then be able to look at the horses form before placing a bet. The user will select the form and information about the horse will appear on the screen. The user will then have an opprtunity to dig deeper and discover a history of its last 3 performances
 
 3) The last feature will be the betting slip. Here the user can interact with app by selecting the horse they wish to bet on. From there the user can select how much this wish to stake. 
-The app will allow the user to place multiple bets. Oncce finished selcting the horse and stake amounts the bet will be placed a reciept of tranaction will be produced.
+The app will allow the user to place multiple bets. Oncce finished selcting the horse and stake amounts the bet will be placed a reciept of tranaction will be produced. The 'recipt' will be in the form of a 'txt' file and will put outputed to the main folder
 
 4) Will add color through gem files. Gives a nicer feel and also gives the user a better experience
 

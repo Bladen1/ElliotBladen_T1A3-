@@ -1,4 +1,9 @@
-require('colorize')
+require 'colorize'
+require 'roo'
+
+sheet = Roo::Spreadsheet.open('./welcome.xlsx')
+
+
 
 now = Time.now
 counter = 1
@@ -20,6 +25,7 @@ loop do
   else
     puts "....."
   end
+  
   counter += 1
   break if counter > 2
   
@@ -51,6 +57,10 @@ loop do
 
 end
 
-puts "WELCOME TO" + " " + "RACELABS".blue
-puts "please press 'enter'"
+puts sheet.row(1)
+puts sheet.row(3)
+puts sheet.row(5)
+
+
+puts "Please press" + " (enter)".blue
 gets.chomp

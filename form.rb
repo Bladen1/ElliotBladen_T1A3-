@@ -67,15 +67,17 @@ elsif age >= 19
           
         elsif input == "f" then
                 puts form
-                puts "Please select 'l' for longer form 'enter' to return to main screen"
+                puts "Please select" + " (l)".blue + " for longer form." +  " (enter)".blue + " to return to main screen"
                 form = gets.chomp
                 if form == "l" then
                     puts l
-                    puts 'Please Press "Enter" to get back to the main screen'
+                    puts "Please press " + "(Enter)".blue + " to get back to the main screen"
                     input = gets.chomp
+                
                 end
                
          end
+         
             
      end
 end

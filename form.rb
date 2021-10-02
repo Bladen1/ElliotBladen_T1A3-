@@ -70,14 +70,14 @@ elsif age >= 19
                 puts "Please select" + " (l)".blue + " for longer form." +  " (enter)".blue + " to return to main screen"
                 form = gets.chomp
                 if form == "l" then
-                    puts l
+                    require_relative './long_form'
                     puts "Please press " + "(Enter)".blue + " to get back to the main screen"
                     input = gets.chomp
                 
                 end
                
          end
-         
+
             
      end
 end

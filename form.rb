@@ -52,8 +52,7 @@ elsif age >= 19
     race = gets.chomp
     while true
         
-       
-    puts odds.green
+     puts odds.green
     puts
     puts "(b)".blue + " " + "to place Bet " + "(f)".blue + " " + "form " + "(e)".red + " " + "exit" 
         input = gets.chomp
@@ -75,10 +74,7 @@ elsif age >= 19
                     input = gets.chomp
                 
                 end
-               
-         end
-
-            
+                 end
      end
 end
     

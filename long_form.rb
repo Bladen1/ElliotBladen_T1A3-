@@ -1,3 +1,4 @@
+require('colorize')
 f = File.read('horse_form.txt')
 e = File.read('horse_form.txt')
 winx = File.readlines('long_form.txt')[0]
@@ -16,7 +17,7 @@ m = 5
 puts f
 while true
    
-    puts "Please press horse number (1-8) to see form. Or press (9) to go back"
+    puts "Please press horse number" + " (1-8)".blue + " to see form. Or press " + "(9) ".blue + "to go back"
     number = gets.chomp.to_f
     if number == 1 then
         puts winx

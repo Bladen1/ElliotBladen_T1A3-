@@ -4,16 +4,8 @@ def greeting
     puts "Welcome to RaceLabs"
 end
 
-def goodbye
-    puts "Thanks for betting with RaceLabs"
-end
-
-def thanks
-    puts "Thanks"
-end
-
 def id
-    puts "Please enter your 18"
+    puts "Please enter your age"
 end
 
 def idfail
@@ -22,11 +14,6 @@ end
 
 def idpass
     puts "Thank you"
-end
-
-def name
-    puts "Please type in your name"
-
 end
 
 def race 
@@ -66,11 +53,11 @@ elsif age >= 19
           
         elsif input == "f" then
                 puts form
-                puts "Please select" + " (l)".blue + " for longer form." +  " (enter)".blue + " to return to main screen"
+                puts "Please select" + " (l)".blue + " for longer form." +  " ('any key')".blue + " to return to main screen"
                 form = gets.chomp
                 if form == "l" then
                     require_relative './long_form'
-                    puts "Please press " + "(Enter)".blue + " to get back to the main screen"
+                    puts "Please press " + "('any key')".blue + " to get back to the main screen"
                     input = gets.chomp
                 
                 end

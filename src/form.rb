@@ -30,10 +30,10 @@ input = 'e'
 
 id
 age = gets.chomp.to_i
-if age <= 18
+if age < 18
     idfail
     exit
-elsif age >= 19
+elsif age >= 18
     idpass
     race
     race = gets.chomp

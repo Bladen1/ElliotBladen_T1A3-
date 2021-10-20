@@ -16,13 +16,9 @@ All content is made up and is not real. This application will not be monetised i
 
 5) Installation
 
-6) Execuation
+6) User Guide
 
-7) User Guide
-
-8) Help
-
-9) Implemntation Plan
+7) Help
 
 
 # 1) The Application
@@ -52,7 +48,7 @@ When developing the application, ease of use and simplicity was kept in mind. Us
 
 # 4) Flow Chart
 
-Please open flow chart in docs folder
+https://drive.google.com/file/d/1mt5tqtzAvCzK_Oq53mema0xLA29jlarV/view?usp=sharing
 
 # 5) Installation
 
@@ -68,24 +64,9 @@ Mac - https://help.dreamhost.com/hc/en-us/articles/115001070131-Using-Bundler-to
 
 PC - https://www.jetbrains.com/help/ruby/using-the-bundler.html
 
-# 6) Execuataion and Gems
+# 6) User Guide
 
-Will run through a step by step guide on the excecuation of the programmme and how to get it running
-
-1) Open up terminal and and run ruby -v to make sure ruby is installed. If not refer back to above to install ruby
-
-2) Bundler -v to make sure bundler is installed
-
-3) Once installed run, gem install colorize     This will load the gem file for colors
-
-4) Next run, gem install roo        This will run the gem file for excel 
-
-5) Once all software and add ons are installed you are ready to go. In terminal, navigate to the T1A3_ElliotBladen folder you downloaded from Git hub
-
-6) Once there navigate to the src folder and type, ruby racelabs.rb            This executes and runs the programme
-
-
-# 7) User Guide
+Once Ruby is up and running. Open up terminal and type in ruby RaceLabs.rb
 
 You will required to be over 18 to run this programme. The programme will shut down if you are found to be under the age of the legal gambling requirement.
 
@@ -97,21 +78,11 @@ In the betslip section you will be prompted to set a stake. Stake sizes are any 
 
 After you selected and placed your bet. You will be provided a transaction slip (receipt) that will be uploaded into the main folder of the programme.
 
-To make it easier for you I will run through a step ny step guide in running the app
-
-1) Programme is running and you are required to enter your age and name. This is the main page (main.rb) Page introduces you to the app and and has a nice welcome message plus logo
-
-2) Once you are confirmed to be over the age of the required limit you will enter the form page. (form.rb) This page is where you will see the race on display aswell the odds for the selcted horse. Here you will have to options. Place a bet or see the long form
-
-3) Seeing the form takes you to (long_form.rb) Here you can take at simple stats like jockey, trainer and barrier. To look further the programme allows you to take a deeper look into the horse by using the 1-9 keys
-
-4) The betslip function (betslip.rb) Is the last step of the programme. Once you have slected a horse you would like to bet on, you are required to enter a stake. Once these 2 items are entered and executed the programme will write out a reciept
-
-# 8) Help
+# 7) Help
 
 Main page
 
-There are 2 columns. The horses name and the horses price. Price means odds. For example Winx 3.00. If you think winx will win, the odds of it winning are 3.00 units. Meaning if you stakes 10 you will win 30. (10 x 3). 
+There are 2 columns. The horses name and the horses price. Price means odds. For example Winx 3.00. If you think winx will win, the odds of it winning are 3.00 units. Meaning if you stakes 10 you will win 30. (10 x 3).
 
 Form
 
@@ -125,8 +96,6 @@ Betting Slip
 
 Stake is the amount of money you wish to stake on the horse you think will win. If the horse wins you will recieve the stake x price. For example if you think Winx will win and it does, you will recieve back 30 (including 10 stake)
 
-# 9) Implementation Plan
 
-Please see in docs folder
 
 

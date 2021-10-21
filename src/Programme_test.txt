@@ -1,12 +1,28 @@
 Test 1
 
-Test 1 was to see if I could make a simple bet. No form reading, No nothing. Just a simple in out experience. Going through my flow chart. It was > Select race 1 > Select my Stake > Select my Horse > Print my receipt. All the functions worked.
+The first series of test is the basic functions of making sure the programme works and doesnt crash. The test concludes that both gem files have been installed.
+This test will prove functuality. The programme will be executed in the terminal and will try prove the ability that the programme works and is ready for people to use
+
+Result
+
+The programme is functional. With both gem files installed the programme does not crash. All loops work. You are able to navigate around the application without the
+app crashing. Age verification also works. App closes down if under the age of 18
 
 Test 2
 
-Test 2 was to make a simple bet by pressing wrong numbers and letters. The programme handled this effectively through loops. It did not crash. The user still had clear instructions on the screen that were easy to understand.
+The second test is the to go through all 8 horse in the form section to see if the programme works. Will do this from the begining 8 times. Navigate into the long form area, 
+make sure the correct data is there, and then navigate back into the betslip section.
 
+Result
+
+Good. All horses have correct information. loops working well. 
 
 Test 3
 
-Test 3 was to test out the form area. Making sure everything worked efficiently and effectively. All functions worked. All instructions easy to understand. Programme informative for the user wishing to make a bet
+The last test I will conduct will be the betting of all 8 horses and the checking of reciept. Will do this from the start each time to double check there a no bugs
+
+Result
+
+All 8 bets are functinal and work. receipt displays all information correctly
+
+

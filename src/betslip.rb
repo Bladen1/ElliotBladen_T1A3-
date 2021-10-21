@@ -24,12 +24,13 @@ horse8 = Horse.new("8", "Saintly", "2231", "D Beadman", "55", "B Cummings", "20"
 
 time = Time.now.getutc
 form = File.read('horse_odds.txt').green
-
+ 
 letter = "b"
 letter = 'e'
 
 while true
 while true
+
 puts
 puts form
 puts
@@ -45,59 +46,60 @@ puts
 end
 
         stake = gets.chomp.to_i
-      
-        
-        puts "Thankyou. Please select your horse number"
+
+        def stakecallback(stake)
+         print stake, " stake or Horse Number "
+        end
+             puts "Thankyou. Please select your horse number"
                 number = gets.chomp.to_i
                 if number == 1
-                   puts stake.to_s + " on " + horse1.name + " " + "@" + " " + horse1.price + ". If this correct please press" + " (C)".blue +  " to confirm and collect your reciept, or " + " ('any key')".blue + " to start agin"
-                   receipt = gets.chomp
-                    receipt == "c" 
-                    File.write('./receipt', time.to_s + " 'The Legends Race'" + " " + stake.to_s + " on " + horse1.name + " @ " + horse1.price)                  
+                    print stakecallback(stake),  number 
+                    puts "." + " Press" + " (enter)".green + " to collect reciept or" + " (esc)".red + " to go back"
+                    gets.chomp
+                    File.write('./receipt', time.to_s + " 'The Legends Race'" + " " + stake.to_s + " on " + horse1.name + " @ " + horse1.price)      
                 elsif
-                    if number == 2
-                    puts stake.to_s + " on " + horse2.name + " " + "@" + " " + horse2.price + ". If this correct please press" + " (C)".blue +  " to confirm and collect your reciept, or " + " ('any key')".blue + " to start agin"
-                    receipt = gets.chomp
-                    receipt == "c" 
-                    File.write('./receipt', time.to_s + " 'The Legends Race'" + " " + stake.to_s + " on " + horse2.name + " @ " + horse2.price)
+                if number == 2
+                     print stakecallback(stake),  number 
+                     puts "." + " Press" + " (enter)".green + " to collect reciept or" + " (esc)".red + " to go back"
+                     gets.chomp
+                     File.write('./receipt', time.to_s + " 'The Legends Race'" + " " + stake.to_s + " on " + horse2.name + " @ " + horse2.price)
                 elsif
                     number == 3
-                    puts stake.to_s + " on " + horse3.name + " " + "@" + " " + horse3.price + ". If this correct please press" + " (C)".blue +  " to confirm and collect your reciept, or " + " ('any key')".blue + " to start agin"
-                    receipt = gets.chomp
-                    receipt == "c" 
+                    print stakecallback(stake),  number 
+                    puts "." + " Press" + " (enter)".green + " to collect reciept or" + " (esc)".red + " to go back"
+                    gets.chomp
                     File.write('./receipt', time.to_s + " 'The Legends Race'" + " " + stake.to_s + " on " + horse3.name + " @ " + horse3.price)
                 elsif
                     number == 4
-                    puts stake.to_s + " on " + horse4.name + " " + "@" + " " + horse4.price + ". If this correct please press" + " (C)".blue +  " to confirm and collect your reciept, or " + " ('any key')".blue + " to start agin"
-                    receipt = gets.chomp
-                    receipt == "c" 
+                    print stakecallback(stake),  number 
+                    puts "." + " Press" + " (enter)".green + " to collect reciept or" + " (esc)".red + " to go back"
+                    gets.chomp
                     File.write('./receipt', time.to_s + " 'The Legends Race'" + " " + stake.to_s + " on " + horse4.name + " @ " + horse4.price)
+                    
                 elsif
                     number == 5
-                    puts stake.to_s + " on " + horse5.name + " " + "@" + " " + horse5.price + ". If this correct please press" + " (C)".blue +  " to confirm and collect your reciept, or " + " ('any key')".blue + " to start agin"
-                    receipt = gets.chomp
-                    receipt == "c" 
+                    print stakecallback(stake),  number 
+                    puts "." + " Press" + " (enter)".green + " to collect reciept or" + " (esc)".red + " to go back"
+                    gets.chomp
                     File.write('./receipt', time.to_s + " 'The Legends Race'" + " " + stake.to_s + " on " + horse5.name + " @ " + horse5.price)
                 elsif
                     number == 6
-                    puts stake.to_s + " on " + horse6.name + " " + "@" + " " + horse6.price + ". If this correct please press" + " (C)".blue +  " to confirm and collect your reciept, or " + " ('any key')".blue + " to start agin"
-                    receipt = gets.chomp
-                    receipt == "c" 
+                    print stakecallback(stake),  number 
+                    puts "." + " Press" + " (enter)".green + " to collect reciept or" + " (esc)".red + " to go back"
+                    gets.chomp
                     File.write('./receipt', time.to_s + " 'The Legends Race'" + " " + stake.to_s + " on " + horse6.name + " @ " + horse6.price)
                 elsif
                     number == 7
-                    puts stake.to_s + " on " + horse7.name + " " + "@" + " " + horse7.price + ". If this correct please press" + " (C)".blue +  " to confirm and collect your reciept, or " + " ('any key')".blue + " to start agin"
-                    receipt = gets.chomp
-                    receipt == "c" 
+                    print stakecallback(stake),  number 
+                    puts "." + " Press" + " (enter)".green + " to collect reciept or" + " (esc)".red + " to go back"
+                    gets.chomp
                     File.write('./receipt', time.to_s + " 'The Legends Race'" + " " + stake.to_s + " on " + horse7.name + " @ " + horse7.price)
                 elsif
                     number == 8
-                    puts stake.to_s + " on " + horse8.name + " " + "@" + " " + horse8.price + ". If this correct please press" + " (C)".blue +  " to confirm and collect your reciept, or " + " ('any key')".blue + " to start agin"
-                    receipt = gets.chomp
-                    receipt == "c" 
+                    print stakecallback(stake),  number 
+                    puts "." + " Press" + " (enter)".green + " to collect reciept or" + " (esc)".red + " to go back"
+                    gets.chomp
                     File.write('./receipt', time.to_s + " 'The Legends Race'" + " " + stake.to_s + " on " + horse8.name + " @ " + horse8.price)
-
-        
-            end
+       end
         end
     end

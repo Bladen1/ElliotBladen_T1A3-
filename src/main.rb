@@ -1,8 +1,25 @@
+
+begin
+
 require 'colorize'
+
+rescue LoadError
+  puts "Please Install colorize Gem file. refer to README.doc"
+  exit
+  end
+
+
+begin
 require 'roo'
+
 
 sheet = Roo::Spreadsheet.open('./welcome.xlsx')
 
+  
+rescue LoadError
+  puts "Please Install Roo Gem file. refer to README.doc"
+  exit
+  end
 
 
 now = Time.now
